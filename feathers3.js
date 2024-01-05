@@ -29,8 +29,8 @@ function setup(){
 
 	for(let i = 0; i < 20; i++){
 
-		direcx = random(-2, 2);
-		direcy = random(-2.4, 2.4);
+		direcx = random(-0.5, 0.5);
+		direcy = random(-0.6, 0.6);
 
 		form[i] = new Form();
 
@@ -200,7 +200,7 @@ class Form {
 
 		t = 1;
 
-			fill(mxc + myc/5, (mxc + myc)/2, mxc/3 + myc, t);
+			fill(mxc + myc/5, (mxc + myc), mxc/3 + myc, t);
 
 			// ellipse(mx, my, 100, 100);
 
