@@ -110,8 +110,8 @@ class Form {
 
 		this.ax = random(width);
 		this.ay = random(height);
-		this.bx = this.ax + 75;
-		this.by = this.ay + 75;
+		this.bx = this.ax + 25;
+		this.by = this.ay + 25;
 		this.cx = (this.ax + this.bx)/2;
 		this.cy = (this.ay + this.by)/2;
 		this.direcx = direcx;
