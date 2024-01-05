@@ -110,8 +110,8 @@ class Form {
 
 		this.ax = random(width);
 		this.ay = random(height);
-		this.bx = this.ax + 25;
-		this.by = this.ay + 25;
+		this.bx = this.ax + 75;
+		this.by = this.ay + 75;
 		this.cx = (this.ax + this.bx)/2;
 		this.cy = (this.ay + this.by)/2;
 		this.direcx = direcx;
@@ -207,9 +207,9 @@ class Form {
 			noStroke();
 			beginShape();
 				vertex(this.ax, this.ay);
-				vertex(this.bx, this.by);
+				vertex((this.bx, this.by)/2);
 				vertex(other.ax, other.ay);
-				vertex(other.bx, other.by);
+				vertex((other.bx, other.by)/2);
 			endShape(CLOSE);
 
 			// console.log(mxc, myc);
