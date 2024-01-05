@@ -20,7 +20,7 @@ let ypos;
 let spotlight;
 
 function setup(){
-	c = createCanvas(600, 400);
+	c = createCanvas(1000, 700);
 
 	// colorMode(HSB);
 
@@ -29,8 +29,8 @@ function setup(){
 
 	for(let i = 0; i < 20; i++){
 
-		direcx = random(-0.5, 0.5);
-		direcy = random(-0.6, 0.6);
+		direcx = random(-1, 1);
+		direcy = random(-1.2, 1.2);
 
 		form[i] = new Form();
 
@@ -110,8 +110,8 @@ class Form {
 
 		this.ax = random(width);
 		this.ay = random(height);
-		this.bx = this.ax + 15;
-		this.by = this.ay + 15;
+		this.bx = this.ax + 5;
+		this.by = this.ay + 5;
 		this.cx = (this.ax + this.bx)/2;
 		this.cy = (this.ay + this.by)/2;
 		this.direcx = direcx;
@@ -181,7 +181,7 @@ class Form {
 
 		d = (this.ad + this.bd + this.cd);
 
-		if(this.ad < 75){
+		if(this.ad < 125){
 
 			return true;
 
