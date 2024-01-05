@@ -139,27 +139,27 @@ class Form {
 		if(this.ax < 0 && this.bx < 0){
 
 			this.ax = width;
-			this.bx = this.ax + 25;
+			this.bx = this.ax + 50;
 
 		}
 
 		if(this.ay < 0 && this.by < 0){
 
 			this.ay = height;
-			this.by = this.ay + 25;
+			this.by = this.ay + 50;
 
 		}
 
 		if(this.ax > width && this.bx > width){
 
 			this.ax = 0;
-			this.bx = this.ax + 25;
+			this.bx = this.ax + 50;
 		}
 
 		if(this.ay > height && this.by > width){
 
 			this.ay = 0;
-			this.by = this.ay + 25;
+			this.by = this.ay + 50;
 
 		}
 
@@ -191,8 +191,8 @@ class Form {
 
 	repel(){
 
-		this.direcx = this.direcx * -2.5;
-		this.direcy = this.direcy * -2.5;
+		this.direcx = this.direcx * -1;
+		this.direcy = this.direcy * -1;
 
 	}
 
@@ -200,7 +200,7 @@ class Form {
 
 		t = 1;
 
-			fill(mxc + myc/6, (mxc + myc)*1.5, mxc/3 + myc, t);
+			fill(mxc + myc/6, (mxc + myc)/1.5, mxc/3 + myc, t);
 
 			// ellipse(mx, my, 100, 100);
 
@@ -208,8 +208,8 @@ class Form {
 			beginShape();
 				vertex(this.ax, this.ay);
 				vertex(this.bx, this.by);
-				vertex((other.ax, other.ay)/2);
-				vertex((other.bx, other.by)/2);
+				vertex(other.ax, other.ay);
+				vertex(other.bx, other.by);
 			endShape(CLOSE);
 
 			// console.log(mxc, myc);
