@@ -139,27 +139,27 @@ class Form {
 		if(this.ax < 0 && this.bx < 0){
 
 			this.ax = width;
-			this.bx = this.ax + 50;
+			this.bx = this.ax + 25;
 
 		}
 
 		if(this.ay < 0 && this.by < 0){
 
 			this.ay = height;
-			this.by = this.ay + 50;
+			this.by = this.ay + 25;
 
 		}
 
 		if(this.ax > width && this.bx > width){
 
 			this.ax = 0;
-			this.bx = this.ax + 50;
+			this.bx = this.ax + 25;
 		}
 
 		if(this.ay > height && this.by > width){
 
 			this.ay = 0;
-			this.by = this.ay + 50;
+			this.by = this.ay + 25;
 
 		}
 
@@ -181,7 +181,7 @@ class Form {
 
 		d = (this.ad + this.bd + this.cd);
 
-		if(this.ad < 125){
+		if(this.ad < 75){
 
 			return true;
 
@@ -191,8 +191,8 @@ class Form {
 
 	repel(){
 
-		this.direcx = this.direcx * -1;
-		this.direcy = this.direcy * -1;
+		this.direcx = this.direcx * -1.5;
+		this.direcy = this.direcy * -1.5;
 
 	}
 
