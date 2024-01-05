@@ -29,8 +29,8 @@ function setup(){
 
 	for(let i = 0; i < 20; i++){
 
-		direcx = random(-1, 1);
-		direcy = random(-1.2, 1.2);
+		direcx = random(-1.2, 1.2);
+		direcy = random(-2.2, 2.2);
 
 		form[i] = new Form();
 
@@ -110,8 +110,8 @@ class Form {
 
 		this.ax = random(width);
 		this.ay = random(height);
-		this.bx = this.ax + 5;
-		this.by = this.ay + 5;
+		this.bx = this.ax + 25;
+		this.by = this.ay + 25;
 		this.cx = (this.ax + this.bx)/2;
 		this.cy = (this.ay + this.by)/2;
 		this.direcx = direcx;
@@ -191,8 +191,8 @@ class Form {
 
 	repel(){
 
-		this.direcx = this.direcx * -1.5;
-		this.direcy = this.direcy * -1.5;
+		this.direcx = this.direcx * -2.5;
+		this.direcy = this.direcy * -2.5;
 
 	}
 
@@ -200,7 +200,7 @@ class Form {
 
 		t = 1;
 
-			fill(mxc + myc/6, (mxc + myc)/1.5, mxc/3 + myc, t);
+			fill(mxc + myc/6, (mxc + myc)/1.5, mxc*2 + myc, t);
 
 			// ellipse(mx, my, 100, 100);
 
