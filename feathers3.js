@@ -200,7 +200,7 @@ class Form {
 
 		t = 1;
 
-			fill(mxc + myc/5, (mxc + myc), mxc/3 + myc, t);
+			fill(mxc + myc/6, (mxc + myc), mxc/3 + myc, t);
 
 			// ellipse(mx, my, 100, 100);
 
@@ -208,8 +208,8 @@ class Form {
 			beginShape();
 				vertex(this.ax, this.ay);
 				vertex(this.bx, this.by);
-				vertex(other.ax, other.ay);
-				vertex(other.bx, other.by);
+				vertex((other.ax, other.ay)/2);
+				vertex((other.bx, other.by)/2);
 			endShape(CLOSE);
 
 			// console.log(mxc, myc);
