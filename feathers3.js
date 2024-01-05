@@ -29,8 +29,8 @@ function setup(){
 
 	for(let i = 0; i < 20; i++){
 
-		direcx = random(-0.5, 0.5);
-		direcy = random(-0.6, 0.6);
+		direcx = random(-1, 1);
+		direcy = random(-1.2, 1.2);
 
 		form[i] = new Form();
 
