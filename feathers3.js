@@ -8,6 +8,9 @@ let colgroup1;
 let mx;
 let my;
 let cols = [];
+let r;
+let g;
+let b;
 
 let lX;
 let lY;
@@ -199,8 +202,15 @@ class Form {
 	connect(other){
 
 		t = 1;
+		// r = mxc + myc/2;
+		// g = (mxc + myc)/1.5;
+		// b = mxc*2 + myc;
 
-			fill(mxc + myc/6, (mxc + myc)/1.5, mxc*2 + myc, t);
+		r = Math.abs(mxc - myc)+ ((mxc/2) * (myc/2))/60;
+		g = Math.abs(mxc/2 + myc/2);
+		b = Math.abs(mxc*2 - myc);
+
+			fill(r, g, b, t);
 
 			// ellipse(mx, my, 100, 100);
 
@@ -212,7 +222,8 @@ class Form {
 				vertex(other.bx, other.by);
 			endShape(CLOSE);
 
-			// console.log(mxc, myc);
+			// console.log(r, g, b);
+			
 
 	}
 	
