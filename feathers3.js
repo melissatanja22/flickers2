@@ -207,9 +207,9 @@ class Form {
 			noStroke();
 			beginShape();
 				vertex(this.ax, this.ay);
-				vertex((this.bx, this.by)/2);
+				vertex(this.bx, this.by);
 				vertex(other.ax, other.ay);
-				vertex((other.bx, other.by)/2);
+				vertex(other.bx, other.by);
 			endShape(CLOSE);
 
 			// console.log(mxc, myc);
