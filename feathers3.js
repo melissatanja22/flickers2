@@ -191,8 +191,8 @@ class Form {
 
 	repel(){
 
-		this.direcx = this.direcx * -1.5;
-		this.direcy = this.direcy * -1.5;
+		this.direcx = this.direcx * -2.5;
+		this.direcy = this.direcy * -2.5;
 
 	}
 
@@ -200,7 +200,7 @@ class Form {
 
 		t = 1;
 
-			fill(mxc + myc/6, (mxc + myc), mxc/3 + myc, t);
+			fill(mxc + myc/6, (mxc + myc)*1.5, mxc/3 + myc, t);
 
 			// ellipse(mx, my, 100, 100);
 
